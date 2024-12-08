@@ -5,7 +5,7 @@ def get_input():
     URL = "https://adventofcode.com/2024/day/7/input"
     session = requests.Session()
 
-    cookie = {'session': '<my sessesion cookie>'}
+    cookie = {'session': '<my session cookie>'}
     response = session.get(URL,cookies=cookie)
     lines=response.text.split('\n')
     input={}
